@@ -1,1 +1,1 @@
-# AS222_T07_TranslateXd
+# Translator Text Azure
