@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { catchError } from 'rxjs/operators';
+import { environment } from '../../../environment/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LanguageDetectionService {
 
-  private apiUrl = 'https://fictional-zebra-56w9g6xp9xrcv5w6-8080.app.github.dev/detect';
+  private apiUrl = environment.detectApiUrl; 
 
   constructor(private http: HttpClient) {}
 

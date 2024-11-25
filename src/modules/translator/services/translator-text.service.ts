@@ -2,12 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { TranslateRequestBody } from '../services/models/translate';
+import { environment } from '../../../environment/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TranslatorTextService {
-  private apiUrl = 'https://fictional-zebra-56w9g6xp9xrcv5w6-8080.app.github.dev/translate';
+  
+  private apiUrl = environment.apiUrl; 
 
   constructor(private http: HttpClient) { }
 
