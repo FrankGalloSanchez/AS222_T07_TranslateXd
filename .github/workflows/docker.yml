@@ -2,7 +2,7 @@ name: SonarCloud + Docker Hub
 on:
   push:
     branches:
-      - developer
+      - developer2
 
 jobs:
   #SONARCLOUD
